@@ -1,0 +1,106 @@
+.container-fluid {
+  width: 75%;
+  padding: 0.5em 0;
+  margin: 0 auto;
+}
+
+header {
+  height: 100vh;
+  background: url("https://media.cntraveller.com/photos/611befd7e98d5e6590e82669/16:9/w_2580,c_limit/regents-park-luna-cinema-conde-nast-traveller-22may18.jpg")
+    no-repeat;
+  background-position: bottom right;
+}
+
+header .description {
+  color: aliceblue;
+  font-family: Jazz LET, fantasy;
+  font-size: 50px;
+  text-align: center;
+  width: 50%;
+  min-width: 300px;
+  position: relative;
+  top: 35%;
+  margin: auto;
+}
+
+.down {
+  color: aliceblue;
+  display: block;
+  font-size: 25px;
+  width: 0px;
+  position: absolute;
+  bottom: 20px;
+  right: 50%;
+}
+
+.card-header {
+  padding: 3em 12.5% 8px 12.5%;
+}
+
+.date {
+  padding: 0.5em 0;
+}
+
+.date a {
+  text-decoration: none;
+}
+
+.filmsDuJour {
+  margin: 2em 0;
+}
+
+.bord {
+  margin: 0 12.5%;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #fff;
+  color: #000;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.ongletDate {
+  color: black;
+}
+
+.card .reservation:not(:hover) {
+  opacity: 0;
+}
+
+.card .reservation {
+  opacity: 1;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  border-radius: 0.375rem;
+}
+
+.card .reservation p {
+  color: #fff;
+  padding: 20px;
+}
+
+.card .reservation input {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 64px;
+  border: none;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-title {
+  margin: 4px 0;
+}
+
+.reserver {
+  background-color: rgba(0, 128, 0, 0.692);
+}

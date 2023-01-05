@@ -88,13 +88,18 @@ header .description {
 .card .reservation input {
   position: absolute;
   bottom: 0;
-  right: 0;
-  width: 100%;
+  left: 50%;
+  width: 50%;
   height: 64px;
   border: none;
   background-color: #fff;
   font-size: 20px;
   font-weight: 600;
+}
+
+.nbReservation{
+  left: 0 !important;
+  padding-left: 10%;
 }
 
 .card-title {
@@ -103,4 +108,91 @@ header .description {
 
 .reserver {
   background-color: rgba(0, 128, 0, 0.692);
+}
+
+input[type=number]{
+  outline: none;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button { 
+-webkit-appearance: none;
+margin:0;
+}
+
+/* Opéra*/
+input::-o-inner-spin-button,
+input::-o-outer-spin-button { 
+-o-appearance: none;
+margin:0
+}
+
+#img_presentation{
+  width: 30vw;
+  border-radius: 20px;
+  box-shadow: -12px 9px 16px 0px #1416196b;
+}
+
+#text_presentation{
+  width: 40vw;
+}
+
+#text_presentation p{
+  font-size: 16px;
+  /* margin-bottom: 12px; */
+}
+
+#text_presentation p i{
+  font-weight: bold;
+  margin: 0;
+}
+
+#presentation{
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* flex-direction: column; */
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 10vw;
+}
+
+#presentation > div {
+  margin: 5vw auto;
+}
+
+h2{
+  margin-bottom: 1.5vh;
+  font-family: 'Noto Serif', serif;
+}
+
+hr{
+  margin-top: 0;
+}
+
+@media screen and (max-width: 860px) {
+  #img_presentation{
+    display: none;
+  }
+  
+  #text_presentation{
+    width: 90vw;
+  }
+
+  #text_presentation p{
+    font-size: 12px;
+  }
+
+  h2{
+    font-size: 18px;
+  }
+
+  .card-header{
+    padding-left: 7vw;
+  }
 }
